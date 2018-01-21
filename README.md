@@ -4,10 +4,12 @@
 - 因为该插件是基于 jQuery 的，所以使用前要先引入 jQuery;
 - 引入插件的核心 js 文件 – CodeHighlight.min.js；
 - 引入对应的样式文件，或将相关样式片段拷贝到自己的 css 文件中，因为只有五六行样式代码；
-- 将需美化的代码放在 **&lt;pre id="CodeHighlight">&lt;/pre>** 中：
-	&lt;pre id="CodeHighlight"> 
-	// code... 
-	&lt;/pre>
+- 将需美化的代码放在 '&lt;pre id="CodeHighlight">&lt;/pre>' 中：
+""
+&lt;pre id="CodeHighlight"> 
+// code... 
+&lt;/pre>
+""
   
 ## 插件的功能
 - 能将中文标点符号转化为英文标点符号，如中文双引号和单引号；
