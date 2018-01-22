@@ -25,4 +25,4 @@
 [Demo](https://alvinyw.github.io/Blog/CodeHighlight/CodeHighlight.html)
 
 ## 插件的详情
-[笔记](http://alvinwp.com/seo/1364)
+[写了一个简单轻量的代码高亮 JS 插件](http://alvinwp.com/seo/1364)
