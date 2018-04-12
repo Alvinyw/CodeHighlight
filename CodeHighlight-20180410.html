@@ -13,26 +13,23 @@ h1 { margin: 50px auto 20px; }
 
 <body>
 <div id="main">
-    <h1 style="padding:0;">CodeHighlight Demo</h1>
+    <h1>CodeHighlight Demo</h1>
     <pre id="CodeHighlight">
 &amp;amp;amp;amp;lt;html>
 &amp;amp;amp;amp;lt;head>
 &lt;title>Thumbnail Navigation&lt;/title>
-&lt;meta name="distribution" content="global"/>
+&lt;meta name="distribution" content="global" />
 &lt;link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-&lt;style type="text/css">
-//...
-&lt;/style>
+&lt;script type="text/javascript" src="assets/js/jquery.lazyload.min.js"></script>
 &lt;/head>
 &lt;body>
 &lt;div id="image-container" style="width: 150px; height: 525px; border: solid 1px #ddd; display: inline-block">&lt;/div>
 &lt;div style="width: 700px; height: 525px; border: solid 1px #ddd; display: inline-block; position: relative;">
-    &lt;div id="video-container" style="width:100%;height:100%;">&lt;/div>
+    &lt;div id="video-container" style ="width:100%;height:100%;">&lt;/div>
     &lt;div id="big-image-container" style="width:100%;height:100%;display:none;">&lt;/div>
     &lt;div id="black-bar" style="width: 100%; padding: 10px 0; text-align: center; background-color: #555; position: absolute; bottom: 0px; display: none;">
         &lt;button onClick="okClick()">ok&lt;/button>
         &lt;button onClick="cancelClick()" style="margin-left: 100px;">cancel&lt;/button>
-        &lt;img class="img-responsive" src="../../" title="codehightlight" alt="codehightlight"/>
     &lt;/div>
 &lt;/div>
 &lt;button id="btn-grab" style="margin-left: 400px; display: block;" onClick="onBtnGrabClick()">Grab a Snapshot&lt;/button>
@@ -43,17 +40,9 @@ Show Video
 &lt;script type="text/javascript" src="DCSResources/dynamsoft.camera.config.js"> &lt;/script> 
 &lt;script type="text/javascript" src="DCSResources/dynamsoft.camera.initiate.js"> &lt;/script> 
 &lt;script src="Scripts/script.js">&lt;/script>
-&lt;script type="text/javascript">
-	for(var i=0;i<10;i++){
-		if(iArray[i]>20){
-			//...
-		}	 
-	}
-&lt;/script>
 &lt;/body>
 &lt;/html>
 </pre>
 </div>
-<br/>
 </body>
 </html>
