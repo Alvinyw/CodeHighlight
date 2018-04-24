@@ -2,31 +2,30 @@
     $.fn.codeHighlight = function (options) {
         var defaults = {
 			codePre: ".CodeHighlight", //需美化代码的容器，可为 class/id/element
-		    addElements: "", //添加需要美化的标签（div,span等），例："br,hr"（虽用了正则去除空格，但最后元素名之间不要有空格）
+		    addElements: "", //添加需要美化的标签（div,span等），例："br,hr"（虽用了正则去除空格，但标签名之间最好不要有空格）
 			addAttr: "", //添加需要美化的属性（id、title等）
-			changeDefaultArg: "", //是否改变了
 			//默认的 style 参数
-			elemColor: "#006699",
-			attrColor: "gray",
-			strColor: "blue",
-			plainColor: "#333",
+			elemColor: "#006699", //默认的标签颜色
+			attrColor: "gray", //默认的属性颜色
+			strColor: "blue", //默认的字符串颜色
+			plainColor: "#333", //默认的字符（如 <、>、=等）颜色
 			//特殊的 element 样式
-			jsColor: "",
-			cssColor: "",
+			jsColor: "", //<script> 标签的颜色
+			cssColor: "", //<style> 标签的颜色
 			metaColor: "",
 			//特殊的 attribute 样式
-			idColor: "",
-			claColor: "",
-			styColor: ""
+			idColor: "", //id 的颜色
+			claColor: "", //class 的颜色
+			styColor: "" //style 的颜色
 		},
 		
 		//把传入的参数 options 合并到 defaults 里并赋给 settings；若 options 里的参数与 defaults 有重复，则 options 会覆盖 defaults 里的参数
 		settings = $.extend(defaults, options), 
 		
 		//默认需要添加样式的标签名
-		defaultElementsArray = new Array("html","head","title","meta","link","style","script","body", "div", "button", "a", "p", "span", "script", "input", "link", "meta", "img", "br"),	
+		defaultElementsArray = new Array("html", "head", "title", "meta", "link", "style", "script", "body", "div", "a", "p", "span", "input", "button", "select", "option", "link", "img", "br", "ul", "ol", "li", "i", "h1", "h2", "h3", "h4"),	
 		//默认需要添加样式的属性名（class 需要最先检测，不然会出现死循环，因为后面添加样式时会不断增加 class）
-		defaultAttrArray = new Array("id","class","content","style","value", "alt","title", "type", "src", "href", "rel", "dir", "lang", "name", "onBlur", "onClick", "onclick", "onFocus", "onKeyUp", "onKeyDown", "onKeyPress");
+		defaultAttrArray = new Array("id", "class", "target", "content", "style", "value", "alt", "title", "type", "src", "href", "rel", "dir", "lang", "name", "onBlur", "onClick", "onFocus", "onKeyUp", "onKeyDown", "onKeyPress");
 		
 		
 		//将 addElements 去掉所有空格之后再转化成数组: "html,head" 转化为 ["html","head"]
@@ -181,6 +180,6 @@
 })(jQuery);
 
 $(function(){
-	// 插件调用
-	$().codeHighlight();
+	//在不改变默认参数值的时候可以再次调用插件
+	//$().codeHighlight();
 });
