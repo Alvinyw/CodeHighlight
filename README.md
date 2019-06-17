@@ -2,7 +2,7 @@
 
 ## 插件提供的参数
   ```javascript
-  	$().codeHighlight({
+  $().codeHighlight({
 		codePre: ".CodeHighlight", //需美化代码的容器，可为 class/id/element
 		addElements: "", //添加需要美化的标签（div,span等），例："br,hr"（虽用了正则去除空格，但标签名之间最好不要有空格）
 		addAttr: "", //添加需要美化的属性（id、title等）
