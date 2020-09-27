@@ -1,20 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CodeHighlight Demo 二</title>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="CodeHighlight.min.js"></script>
-<style>
-#main { width: 980px; margin: 0 auto; }
-h1 { margin: 50px auto 20px; }
-</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CodeHighlight Demo 二</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="CodeHighlight.min.js"></script>
+	<style>
+		#main {
+			width: 980px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			margin: 50px auto 20px;
+		}
+	</style>
 </head>
 
 <body>
-<div id="main">
-    <h1 style="padding:0;">CodeHighlight Demo</h1>
-    <pre class="CodeHighlight">
+	<div id="main">
+		<h1 style="padding:0;">CodeHighlight Demo</h1>
+		<pre class="CodeHighlight">
 &amp;amp;amp;amp;lt;html>
 &amp;amp;amp;amp;lt;head>
 &lt;title>Thumbnail Navigation&lt;/title>
@@ -54,21 +62,22 @@ Show Video
 &lt;/body>
 &lt;/html>
 </pre>
-</div>
-<script>
-$(function(){
-	// 插件调用
-	$().codeHighlight({
-		//特殊的 element 样式
-		jsColor: "#d10303",
-		cssColor: "#f408af",
-		metaColor: "#c1ad04",
-		//特殊的 attribute 样式
-		idColor: "#fe8e14",
-		claColor: "green",
-		styColor: "pink"
-	});
-});
-</script>
+	</div>
+	<script>
+		$(function () {
+			// 插件调用
+			$().codeHighlight({
+				//特殊的 element 样式
+				jsColor: "#d10303",
+				cssColor: "#f408af",
+				metaColor: "#c1ad04",
+				//特殊的 attribute 样式
+				idColor: "#fe8e14",
+				claColor: "green",
+				styColor: "pink"
+			});
+		});
+	</script>
 </body>
+
 </html>

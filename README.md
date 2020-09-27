@@ -1,4 +1,4 @@
-﻿# 代码高亮插件： CodeHighlight
+﻿# 代码高亮插件：CodeHighlight
 
 ## 一、通过 Node 引用
 
