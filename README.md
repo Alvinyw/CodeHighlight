@@ -145,4 +145,4 @@ $(function(){
 - [codeHighlight 传参](https://alvinyw.github.io/Blog/CodeHighlight/CodeHighlight-2.html)
 
 ### 博客链接
-[写了一个简单轻量的代码高亮 JS 插件](http://alvinwp.com/seo/1364)
+[写了一个简单轻量的代码高亮 JS 插件](https://alvinwp.com/seo/1364)
